@@ -204,9 +204,65 @@ html {
   font-size: 62.5%;
 }
 
+/*
+
+FONTS
+
+Header-Heading (the restaurant mall, get in touch, blog)
+JosefinSans, Semibold, 69px
+
+Headings (Locat.., Comm.., Blog, Get in.., Bring...)
+JosefinSans, Regular, 45px
+Line height: 99.8px
+
+Heading (win a $100..., bringing nature..)
+JosefinSans, Regular, 45px
+Center, Line height: 99.8px
+
+Heading (employment...)
+JosefinSans, Regular, 45px
+Line height: 99.8px
+
+Headings (Best burg.., Try someth.., Comments)
+JosefinSans, Regular, 40px
+Line height: 58px, Letter spacing: 1.3px
+
+Headings (Featured.., Recent..,
+JosefinSans, Regular, 25px
+Line height: 58px, Letter spacing: 0.8px
+
+buttons
+JosefinSans, Regular, 22.4px
+Center, Line height: 41.6px
+
+nav
+JosefinSans, Bold, 20px
+Center, Line height: 29px, Letter spacing: 1px
+
+*/
+body,
+a {
+  font-family: 'Josefin Sans', sans-serif;
+  color: #FFF;
+}
+
+.page-title__heading {
+  font-size: 6.9rem;
+}
+
+.wrapper {
+  max-width: 114rem;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.header {
+  width: 100%;
+}
+
 .site-nav {
   background: transparent;
-  padding: 7.2rem;
+  padding: 7.2rem 0;
 }
 
 .site-nav__list {
@@ -222,4 +278,8 @@ html {
 
 .site-nav__link {
   text-decoration: none;
+}
+
+.header--home {
+  background: center/cover no-repeat url("../images/home-header.jpg");
 }

@@ -35,6 +35,12 @@ Center, Line height: 29px, Letter spacing: 1px
 
 */
 
-body {
+body,
+a {
     font-family: 'Josefin Sans', sans-serif;
+    color: $color-text;
+}
+
+.page-title__heading {
+    font-size: 6.9rem
 }
