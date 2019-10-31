@@ -1,3 +1,19 @@
+/*
+COLORS
+
+Sunflower yellow
+#FFD300
+
+Pine
+#2B331B
+
+Almost black
+#171B0E
+
+Black
+#0F0F0F
+
+*/
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block;
 }
@@ -165,8 +181,8 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   box-sizing: border-box;
 }
 
-.visuallyHidden:not(:focus):not(:active) {
-  position: absolute;
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute !important;
   width: 1px;
   height: 1px;
   margin: -1px;
@@ -178,4 +194,32 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   clip: rect(0 0 0);
   overflow: hidden;
 }
-/*# sourceMappingURL=style.css.map */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.site-nav {
+  background: transparent;
+  padding: 7.2rem;
+}
+
+.site-nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.site-nav__item:not(:last-child) {
+  margin-right: 4rem;
+}
+
+.site-nav__link {
+  text-decoration: none;
+}
