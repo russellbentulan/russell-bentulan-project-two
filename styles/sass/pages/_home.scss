@@ -1,3 +1,15 @@
 .header--home {
     background: center / cover no-repeat url("../images/home-header.jpg");
+
+    .site-logo {
+        &__line{
+            display: block;
+        }
+
+        &__block {
+            padding: 1.4rem 1.4rem 0 1.4rem;
+            background-color: $color-text;
+            color: $color-secondary;
+        }
+    }
 }
