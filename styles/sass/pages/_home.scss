@@ -1,4 +1,6 @@
+// HEADER
 .header--home {
+    position: relative;
     background: center / cover no-repeat url("../images/home-header.jpg");
 
     .site-logo {
@@ -7,9 +9,27 @@
         }
 
         &__block {
-            padding: 1.4rem 1.4rem 0 1.4rem;
+            padding: .27em .27em 0 .27em; // centers the "restaurant" text inside the header background
             background-color: $color-text;
             color: $color-secondary;
         }
+    }
+
+    &__img {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateY(30%);
+        height: 62.5rem;
+    }
+}
+
+// List with restaurant information
+.info {
+    background-color: $color-primary;
+    padding-top: (18rem + $gutter-vertical-sm); // places child elements below header image
+
+    &__list {
+        @extend %list-reset;
     }
 }

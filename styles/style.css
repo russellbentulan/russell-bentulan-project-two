@@ -14,6 +14,10 @@ Black
 #0F0F0F
 
 */
+.info__list {
+  list-style: none;
+}
+
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block;
 }
@@ -204,6 +208,10 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /*
 
 FONTS
@@ -291,6 +299,7 @@ a {
 }
 
 .header--home {
+  position: relative;
   background: center/cover no-repeat url("../images/home-header.jpg");
 }
 
@@ -299,7 +308,21 @@ a {
 }
 
 .header--home .site-logo__block {
-  padding: 1.4rem 1.4rem 0 1.4rem;
+  padding: .27em .27em 0 .27em;
   background-color: #FFF;
   color: #171B0E;
+}
+
+.header--home__img {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateY(30%);
+          transform: translateY(30%);
+  height: 62.5rem;
+}
+
+.info {
+  background-color: #2B331B;
+  padding-top: 23rem;
 }
