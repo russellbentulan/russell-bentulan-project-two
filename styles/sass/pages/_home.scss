@@ -32,4 +32,29 @@
     &__list {
         @extend %list-reset;
     }
+
+    &__item {
+        display: flex;
+        align-items: flex-start;
+
+        &:nth-child(1), 
+        &:nth-child(2) {
+            margin-bottom: $grid-gutter;    
+        }
+    }
+
+    &__icon {
+        flex: 1 0 5rem;
+        height: 5rem;
+        background-color: $color-accent;
+        color: $color-secondary;
+        border-radius: 50%;
+        font-size: 2rem;
+        margin-right: $gutter-horizontal;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }

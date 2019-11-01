@@ -247,11 +247,22 @@ nav
 JosefinSans, Bold, 20px
 Center, Line height: 29px, Letter spacing: 1px
 
+body text
+Barlow, Regular, 20px
+Line height: 28px, Letter spacing: 1px
+
 */
 body,
 a {
   font-family: 'Josefin Sans', sans-serif;
   color: #FFF;
+}
+
+p,
+a {
+  font-size: 2rem;
+  line-height: 1.4;
+  letter-spacing: 1px;
 }
 
 .site-nav__link {
@@ -263,10 +274,38 @@ a {
   font-size: 6.9rem;
 }
 
+.info__title {
+  font-size: 4.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
 .wrapper {
   max-width: 114rem;
   width: 90%;
   margin: 0 auto;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+[class*="col-"]:not(:last-child) {
+  margin-right: 5rem;
+}
+
+.col-1-of-2 {
+  width: calc((100% - 5rem) / 2);
+}
+
+.col-1-of-2:nth-child(2) {
+  margin-right: 0;
 }
 
 .header {
@@ -325,4 +364,42 @@ a {
 .info {
   background-color: #2B331B;
   padding-top: 23rem;
+}
+
+.info__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.info__item:nth-child(1), .info__item:nth-child(2) {
+  margin-bottom: 5rem;
+}
+
+.info__icon {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 5rem;
+          flex: 1 0 5rem;
+  height: 5rem;
+  background-color: #FFD300;
+  color: #171B0E;
+  border-radius: 50%;
+  font-size: 2rem;
+  margin-right: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }

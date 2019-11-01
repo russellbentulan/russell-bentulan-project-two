@@ -33,12 +33,23 @@ nav
 JosefinSans, Bold, 20px
 Center, Line height: 29px, Letter spacing: 1px
 
+body text
+Barlow, Regular, 20px
+Line height: 28px, Letter spacing: 1px
+
 */
 
 body,
 a {
     font-family: 'Josefin Sans', sans-serif;
     color: $color-text;
+}
+
+p,
+a {
+    font-size: 2rem;
+    line-height: 1.4;
+    letter-spacing: 1px;
 }
 
 .site-nav__link {
@@ -48,4 +59,12 @@ a {
 
 .page-title__heading {
     font-size: 6.9rem
+}
+
+.info {
+    &__title {
+        font-size: 4.5rem;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
 }

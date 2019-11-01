@@ -3,3 +3,22 @@
     width: 90%;
     margin: 0 auto;
 }
+
+.flex-container {
+    display: flex;
+    flex-flow:row wrap;
+}
+
+[class*="col-"] {
+    &:not(:last-child) {
+        margin-right: $grid-gutter;
+    }
+}
+
+.col-1-of-2 {
+    width: calc((100% - #{$grid-gutter}) / 2);
+    
+    &:nth-child(2) {
+        margin-right: 0;
+    }
+}
