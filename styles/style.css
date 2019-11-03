@@ -14,7 +14,7 @@ Black
 #0F0F0F
 
 */
-.info__list {
+.info__list, .gallery__list {
   list-style: none;
 }
 
@@ -361,6 +361,14 @@ h4 {
   margin-right: 0;
 }
 
+.col-1-of-3 {
+  width: calc((100% - 2* 5rem) / 3);
+}
+
+.col-1-of-3:nth-child(3) {
+  margin-right: 0;
+}
+
 .header {
   min-height: 62.5rem;
 }
@@ -556,4 +564,9 @@ h4 {
   -webkit-box-flex: 1;
       -ms-flex: 1 1;
           flex: 1 1;
+}
+
+.gallery {
+  background-color: #171B0E;
+  padding: 10rem 0;
 }

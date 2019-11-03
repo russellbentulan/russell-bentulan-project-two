@@ -168,3 +168,13 @@
         @extend %btn--dark;
     }
 }
+
+// Gallery section
+.gallery {
+    background-color: $color-secondary;
+    padding: $gutter-vertical-lg 0;
+
+    &__list {
+        @extend %list-reset;
+    }
+}
