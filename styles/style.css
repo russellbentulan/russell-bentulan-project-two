@@ -377,6 +377,11 @@ h4 {
   text-decoration: none;
 }
 
+.banner-image {
+  background: center/cover no-repeat url("../images/banner.jpg");
+  height: 45rem;
+}
+
 .header--home {
   position: relative;
   background: center/cover no-repeat url("../images/home-header.jpg");
