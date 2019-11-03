@@ -39,6 +39,9 @@ Line height: 28px, Letter spacing: 1px
 
 */
 
+// Height added to center text using the Josefin sans typography
+$josefin-baseline-fix: .25em;
+
 body,
 a {
     font-family: 'Josefin Sans', sans-serif;

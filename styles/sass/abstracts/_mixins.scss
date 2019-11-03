@@ -1,0 +1,9 @@
+// Centers 'Josefin-sans' font baseline by adding space to the top
+@mixin josefin-baseline-fix($padding-vert : 0rem, $padding-hoz : 0rem) {
+    $top-padding: .25em;
+    $calc-padding-vert: calc(#{$top-padding} + #{$padding-vert});
+    $calc-padding-hoz: calc(#{$top-padding} + #{$padding-hoz});
+
+    padding: $calc-padding-vert $calc-padding-hoz;
+    padding-bottom: $padding-vert;
+}

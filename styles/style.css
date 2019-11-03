@@ -292,6 +292,17 @@ a {
   text-transform: uppercase;
 }
 
+.menu .menu-item__btn {
+  display: inline-block;
+  font-family: 'Josefin Sans', sans-serif;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #FFD300;
+  color: #171B0E;
+  padding: calc(0.25em + 1rem) calc(0.25em + 0.5rem);
+  padding-bottom: 1rem;
+}
+
 .wrapper {
   max-width: 114rem;
   width: 90%;
@@ -356,15 +367,16 @@ a {
 
 .header--home .site-logo__line, .header--home .site-logo__block {
   display: block;
-  padding-top: .27em;
+  padding: calc(0.25em + 0rem) calc(0.25em + 0rem);
+  padding-bottom: 0rem;
 }
 
 .header--home .site-logo__block {
   display: inline-block;
   background-color: #FFF;
   color: #171B0E;
-  padding-left: .27em;
-  padding-right: .27em;
+  padding: calc(0.25em + 0rem) calc(0.25em + 0rem);
+  padding-bottom: 0rem;
 }
 
 .header--home__img {

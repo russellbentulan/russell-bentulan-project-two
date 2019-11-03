@@ -1,0 +1,10 @@
+%btn {
+    display: inline-block;
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: $color-accent;
+    color: $color-secondary;
+
+    @include josefin-baseline-fix(1rem, .5rem);
+}

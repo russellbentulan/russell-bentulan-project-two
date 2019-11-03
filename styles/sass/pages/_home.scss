@@ -7,15 +7,14 @@
         &__line,
         &__block {
             display: block;
-            padding-top: .27em; // centers the 'Josefin Sans' font vertically by adding top padding
+            @include josefin-baseline-fix;
         }
 
         &__block {
             display: inline-block;
             background-color: $color-text;
             color: $color-secondary;
-            padding-left: .27em;
-            padding-right: .27em;
+            @include josefin-baseline-fix;
         }
 
     }
@@ -104,6 +103,10 @@
         &:last-child > * {
             position: relative;
             top: 6rem;
+        }
+
+        &__btn {
+            @extend %btn;
         }
     }
 }
