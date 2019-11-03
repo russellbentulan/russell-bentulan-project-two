@@ -6,5 +6,5 @@
     background-color: $color-accent;
     color: $color-secondary;
 
-    @include josefin-baseline-fix(1rem, .5rem);
+    @include josefin-baseline-fix(.5rem, .25rem);
 }

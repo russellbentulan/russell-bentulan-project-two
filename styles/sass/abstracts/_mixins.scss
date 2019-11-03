@@ -4,6 +4,10 @@
     $calc-padding-vert: calc(#{$top-padding} + #{$padding-vert});
     $calc-padding-hoz: calc(#{$top-padding} + #{$padding-hoz});
 
-    padding: $calc-padding-vert $calc-padding-hoz;
-    padding-bottom: $padding-vert;
+    @if $padding-vert != 0rem and $padding-hoz != 0rem {
+        padding: $calc-padding-vert $calc-padding-hoz;
+        padding-bottom: $padding-vert;
+    } @else {
+        padding-top: $top-padding;
+    }
 }

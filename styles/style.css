@@ -299,8 +299,8 @@ a {
   text-transform: uppercase;
   background-color: #FFD300;
   color: #171B0E;
-  padding: calc(0.25em + 1rem) calc(0.25em + 0.5rem);
-  padding-bottom: 1rem;
+  padding: calc(0.25em + 0.5rem) calc(0.25em + 0.25rem);
+  padding-bottom: 0.5rem;
 }
 
 .wrapper {
@@ -367,16 +367,16 @@ a {
 
 .header--home .site-logo__line, .header--home .site-logo__block {
   display: block;
-  padding: calc(0.25em + 0rem) calc(0.25em + 0rem);
-  padding-bottom: 0rem;
+  padding-top: 0.25em;
 }
 
 .header--home .site-logo__block {
   display: inline-block;
   background-color: #FFF;
   color: #171B0E;
-  padding: calc(0.25em + 0rem) calc(0.25em + 0rem);
-  padding-bottom: 0rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.25em;
 }
 
 .header--home__img {
