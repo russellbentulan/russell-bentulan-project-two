@@ -97,5 +97,14 @@ h4 {
     &__title {
         @extend %title;
         font-size: 4.5rem;
+        color: $color-accent;
+    }
+}
+
+.nature {
+    &__title {
+        @extend %title;
+        font-size: 4.5rem;
+        color: $color-accent;
     }
 }

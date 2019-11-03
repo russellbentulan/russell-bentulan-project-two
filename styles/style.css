@@ -18,7 +18,7 @@ Black
   list-style: none;
 }
 
-.menu .menu-item__content > *:not(:last-child), .promo__content > *:not(:last-child) {
+.menu .menu-item__content > *:not(:last-child), .promo__content > *:not(:last-child), .nature__content > *:not(:last-child) {
   margin-bottom: 2.4rem;
 }
 
@@ -281,7 +281,7 @@ h4 {
   padding-top: 0.25em;
 }
 
-.info__title, .menu-item__title, .promo__title {
+.info__title, .menu-item__title, .promo__title, .nature__title {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 1.3px;
@@ -307,9 +307,15 @@ h4 {
 
 .promo__title {
   font-size: 4.5rem;
+  color: #FFD300;
 }
 
-.menu .menu-item__btn, .promo__btn {
+.nature__title {
+  font-size: 4.5rem;
+  color: #FFD300;
+}
+
+.promo__btn, .nature__btn, .menu .menu-item__btn {
   display: inline-block;
   font-family: 'Josefin Sans', sans-serif;
   text-decoration: none;
@@ -317,6 +323,13 @@ h4 {
   background-color: #FFD300;
   color: #171B0E;
   padding: calc(0.25em + 0.5rem) calc(0.25em + 0.25rem);
+  padding-bottom: 0.5rem;
+}
+
+.promo__btn, .nature__btn {
+  background-color: #171B0E;
+  color: #FFF;
+  padding: calc(0.25em + 0.5rem) calc(0.25em + 1rem);
   padding-bottom: 0.5rem;
 }
 
@@ -521,9 +534,26 @@ h4 {
   text-align: left;
 }
 
-.promo__btn {
-  background-color: #171B0E;
-  color: #FFD300;
-  padding: calc(0.25em + 0.5rem) calc(0.25em + 1rem);
-  padding-bottom: 0.5rem;
+.nature {
+  background-color: #2B331B;
+  padding: 10rem;
+}
+
+.nature__img-container {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  position: relative;
+  margin-right: 5rem;
+}
+
+.nature__img {
+  -webkit-box-shadow: -2rem 2rem #FFD300;
+          box-shadow: -2rem 2rem #FFD300;
+}
+
+.nature__content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1;
+          flex: 1 1;
 }

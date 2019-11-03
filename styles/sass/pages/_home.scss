@@ -140,9 +140,31 @@
     }
 
     &__btn {
-        @extend %btn;
-        background-color: $color-secondary;
-        color: $color-accent;
-        @include josefin-baseline-fix(.5rem, 1rem);
+        @extend %btn--dark;
+    }
+}
+
+// Nature space section
+.nature {
+    background-color: $color-primary;
+    padding: $gutter-vertical-lg;
+
+    &__img-container {
+        flex: 0 1 auto;
+        position: relative;
+        margin-right: $grid-gutter;
+    }
+
+    &__img {
+        box-shadow: -2rem 2rem $color-accent;
+    }
+
+    &__content {
+        flex: 1 1;
+        @extend %text-container;
+    }
+
+    &__btn {
+        @extend %btn--dark;
     }
 }

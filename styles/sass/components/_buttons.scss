@@ -7,4 +7,11 @@
     color: $color-secondary;
 
     @include josefin-baseline-fix(.5rem, .25rem);
+
+    &--dark {
+        @extend %btn;
+        background-color: $color-secondary;
+        color: #FFF;
+        @include josefin-baseline-fix(.5rem, 1rem);
+    }
 }
