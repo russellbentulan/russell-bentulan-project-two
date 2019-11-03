@@ -71,10 +71,17 @@
 .menu {
     background-color: $color-secondary;
     position:relative;
-    padding-bottom: $gutter-vertical-sm;
 
+    &::after {
+        content: "";
+        display: block;
+        height: $gutter-vertical-sm;
+        width: 100%;
+        background-color: $color-primary;
+    }
     .menu-item {
         align-items: flex-start;
+        padding-bottom: $gutter-vertical-sm;
         
         &--reverse {
             @extend .menu-item;
@@ -103,10 +110,6 @@
             @extend %text-container;
         }
         
-        &__title {
-            @include josefin-baseline-fix;
-        }
-        
         &__btn {
             @extend %btn;
         }
@@ -119,5 +122,27 @@
             position: relative;
             top: 6rem;
         }
+    }
+}
+
+// Promo Section
+.promo {
+    background-color: $color-primary;
+    padding: $gutter-vertical-lg 0;
+
+    &__content {
+        @extend %text-container;
+        text-align: center;
+    }
+
+    &__text {
+        text-align: left;
+    }
+
+    &__btn {
+        @extend %btn;
+        background-color: $color-secondary;
+        color: $color-accent;
+        @include josefin-baseline-fix(.5rem, 1rem);
     }
 }

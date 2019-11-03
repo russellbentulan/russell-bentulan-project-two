@@ -56,6 +56,19 @@ a {
     letter-spacing: 1px;
 }
 
+h1,
+h2,
+h3,
+h4 {
+    @include josefin-baseline-fix;
+}
+
+%title {
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+}
+
 .site-nav__link {
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 600;
@@ -68,16 +81,21 @@ a {
 
 .info {
     &__title {
+        @extend %title;
         font-size: 4.5rem;
-        font-weight: 400;
-        text-transform: uppercase;
     }
 }
 
 .menu-item {
     &__title {
+        @extend %title;
         font-size: 4rem;
-        letter-spacing: 1.3px;
-        text-transform: uppercase;
+    }
+}
+
+.promo {
+    &__title {
+        @extend %title;
+        font-size: 4.5rem;
     }
 }
