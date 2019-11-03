@@ -47,12 +47,14 @@ a {
 
 p,
 a {
+    font-family: 'Barlow', sans-serif;
     font-size: 2rem;
     line-height: 1.4;
     letter-spacing: 1px;
 }
 
 .site-nav__link {
+    font-family: 'Josefin Sans', sans-serif;
     font-weight: 600;
     font-size: 2rem;
 }
@@ -65,6 +67,14 @@ a {
     &__title {
         font-size: 4.5rem;
         font-weight: 400;
+        text-transform: uppercase;
+    }
+}
+
+.menu-item {
+    &__title {
+        font-size: 4rem;
+        letter-spacing: 1.3px;
         text-transform: uppercase;
     }
 }

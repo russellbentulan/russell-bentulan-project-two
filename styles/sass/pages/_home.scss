@@ -4,15 +4,20 @@
     background: center / cover no-repeat url("../images/home-header.jpg");
 
     .site-logo {
-        &__line{
+        &__line,
+        &__block {
             display: block;
+            padding-top: .27em; // centers the 'Josefin Sans' font vertically by adding top padding
         }
 
         &__block {
-            padding: .27em .27em 0 .27em; // centers the "restaurant" text inside the header background
+            display: inline-block;
             background-color: $color-text;
             color: $color-secondary;
+            padding-left: .27em;
+            padding-right: .27em;
         }
+
     }
 
     &__img {
@@ -20,14 +25,16 @@
         left: 50%;
         bottom: 0;
         transform: translateY(30%);
-        height: 62.5rem;
+        max-height: 62.5rem;
+        width: auto;
     }
 }
 
-// List with restaurant information
+// RESTAURANT INFO SECTION
 .info {
     background-color: $color-primary;
     padding-top: (18rem + $gutter-vertical-sm); // places child elements below header image
+    padding-bottom: $gutter-vertical-lg;
 
     &__list {
         @extend %list-reset;
@@ -56,5 +63,47 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+}
+
+// MENU ITEMS SECTION
+.menu {
+    background-color: $color-secondary;
+    position:relative;
+
+    .menu-item {
+        align-items: center;
+        
+        &--reverse {
+            @extend .menu-item;
+            flex-direction: row-reverse;
+        }
+
+        &__img-container {
+            background-color: $color-accent;
+            height: 100%;
+        }
+
+        &__img {
+            position: relative;
+            width: 100%;
+            bottom: 2rem;
+            right: 2rem;
+
+            &--reverse {
+                @extend .menu-item__img;
+                right: initial;
+                left: 2rem;
+            }
+        }
+
+        &:first-child .menu-item__content {
+            margin-top: $gutter-vertical-lg;
+        }
+
+        &:last-child > * {
+            position: relative;
+            top: 6rem;
+        }
     }
 }
