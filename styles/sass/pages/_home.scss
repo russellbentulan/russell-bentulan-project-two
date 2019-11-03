@@ -71,9 +71,10 @@
 .menu {
     background-color: $color-secondary;
     position:relative;
+    padding-bottom: $gutter-vertical-sm;
 
     .menu-item {
-        align-items: center;
+        align-items: flex-start;
         
         &--reverse {
             @extend .menu-item;
@@ -98,17 +99,25 @@
             }
         }
 
+        &__content {
+            @extend %text-container;
+        }
+        
+        &__title {
+            @include josefin-baseline-fix;
+        }
+        
+        &__btn {
+            @extend %btn;
+        }
+
         &:first-child .menu-item__content {
-            margin-top: $gutter-vertical-lg;
+            margin-top: $gutter-vertical;
         }
 
         &:last-child > * {
             position: relative;
             top: 6rem;
-        }
-
-        &__btn {
-            @extend %btn;
         }
     }
 }
