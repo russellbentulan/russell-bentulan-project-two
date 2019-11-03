@@ -315,6 +315,15 @@ h4 {
   color: #FFD300;
 }
 
+.footer {
+  font-family: 'Josefin Sans', sans-serif;
+  padding: 1rem 0;
+}
+
+.footer__text {
+  padding-top: 0.25em;
+}
+
 .promo__btn, .nature__btn, .menu .menu-item__btn {
   display: inline-block;
   font-family: 'Josefin Sans', sans-serif;
@@ -401,6 +410,11 @@ h4 {
 .banner-image {
   background: center/cover no-repeat url("../images/banner.jpg");
   height: 45rem;
+}
+
+.footer {
+  background-color: #0F0F0F;
+  text-align: center;
 }
 
 .header--home {

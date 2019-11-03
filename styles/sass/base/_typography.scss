@@ -108,3 +108,11 @@ h4 {
         color: $color-accent;
     }
 }
+
+.footer {
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 1rem 0;
+    &__text {
+        @include josefin-baseline-fix;
+    }
+}
