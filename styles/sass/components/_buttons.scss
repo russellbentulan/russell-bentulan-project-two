@@ -8,10 +8,18 @@
 
     @include josefin-baseline-fix(.5rem, .25rem);
 
+    &:hover {
+        background-color: $color-accent-light;
+    }
+
     &--dark {
         @extend %btn;
         background-color: $color-secondary;
         color: #FFF;
         @include josefin-baseline-fix(.5rem, 1rem);
+
+        &:hover {
+            background-color: $color-secondary-light;
+        }
     }
 }

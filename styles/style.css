@@ -22,6 +22,18 @@ Black
   margin-bottom: 2.4rem;
 }
 
+/*
+    MEDIA QUERIES
+
+    $breakpoint arguments
+
+    0-600px: xs
+    600-900px: sm
+    900-1200px: md
+    (1200-1800) default styles applied
+    1800px+: lg
+
+*/
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block;
 }
@@ -335,11 +347,19 @@ h4 {
   padding-bottom: 0.5rem;
 }
 
+.promo__btn:hover, .nature__btn:hover, .menu .menu-item__btn:hover {
+  background-color: #FFE566;
+}
+
 .promo__btn, .nature__btn {
   background-color: #171B0E;
   color: #FFF;
   padding: calc(0.25em + 0.5rem) calc(0.25em + 1rem);
   padding-bottom: 0.5rem;
+}
+
+.promo__btn:hover, .nature__btn:hover {
+  background-color: #63763E;
 }
 
 .wrapper {
@@ -389,7 +409,7 @@ h4 {
 
 .site-nav {
   background: transparent;
-  padding: 7.2rem 0;
+  padding-top: 7.2rem;
 }
 
 .site-nav__list {
@@ -404,7 +424,24 @@ h4 {
 }
 
 .site-nav__link {
+  display: inline-block;
   text-decoration: none;
+  border-bottom: 4px solid transparent;
+  padding-bottom: .6rem;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: .2s all;
+  transition: .2s all;
+}
+
+.site-nav__link:not(.site-nav__link--current):hover {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  border-bottom: 4px solid #FFF;
+}
+
+.site-nav__link--current {
+  border-bottom: 4px solid #FFD300;
 }
 
 .banner-image {

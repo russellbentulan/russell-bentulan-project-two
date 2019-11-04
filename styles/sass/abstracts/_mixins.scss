@@ -11,3 +11,35 @@
         padding-top: $top-padding;
     }
 }
+
+/*
+    MEDIA QUERIES
+
+    $breakpoint arguments
+
+    0-600px: xs
+    600-900px: sm
+    900-1200px: md
+    (1200-1800) default styles applied
+    1800px+: lg
+
+*/
+@mixin respond($breakpoint) {
+
+    @if $breakpoint == xs {
+        @media (max-width: 600px) {  @content };
+    }
+
+    @if $breakpoint == sm {
+        @media (max-width: 900px) { @content };
+    }
+
+    @if $breakpoint == md {
+        @media (max-width: 1200px) { @content };
+    }
+
+    @if $breakpoint == lg {
+        @media (min-width: 1800px) { @content };
+    }
+
+}

@@ -1,7 +1,7 @@
 .site-nav {
 
     background: transparent;
-    padding: $gutter-vertical 0;
+    padding-top: $gutter-vertical;
 
     &__list {
         display: flex;
@@ -15,6 +15,20 @@
     }
 
     &__link {
+        display: inline-block;
         text-decoration: none;
+        border-bottom: 4px solid transparent;
+        padding-bottom: .6rem;
+        transform: translateY(0);
+        transition: .2s all;
+
+        &:not(.site-nav__link--current):hover {
+            transform: translateY(-3px);
+            border-bottom: 4px solid #FFF;
+        }
+
+        &--current {
+            border-bottom: 4px solid $color-accent;
+        }
     }
 }
