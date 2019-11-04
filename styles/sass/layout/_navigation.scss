@@ -118,4 +118,10 @@
             }
         }
     }
+
+    @include respond(xs) {
+        &__icon::before {
+            font-size: 3.2rem;
+        }
+    }
 }

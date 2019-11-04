@@ -27,11 +27,13 @@ Black
 
     $breakpoint arguments
 
-    0-600px: sm
-    600-900px: md
-    900-1200px: lg
-    (1200-1800) default styles applied
-    1800px+: xxl
+
+    0-420px: xs
+    420-680px: sm
+    681-900px: md
+    901-1240px: lg
+    (1241-1800) default styles applied
+    1801px+: xxl
 
 */
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
@@ -224,9 +226,9 @@ html {
   font-size: 62.5%;
 }
 
-@media (max-width: 680px) {
+@media (min-width: 1800px) {
   html {
-    font-size: 56.25%;
+    font-size: 75%;
   }
 }
 
@@ -236,9 +238,15 @@ html {
   }
 }
 
-@media (min-width: 1800px) {
+@media (max-width: 680px) {
   html {
-    font-size: 75%;
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 420px) {
+  html {
+    font-size: 43.75%;
   }
 }
 
@@ -545,6 +553,12 @@ h4 {
   }
 }
 
+@media (max-width: 420px) {
+  .site-nav__icon::before {
+    font-size: 3.2rem;
+  }
+}
+
 .banner-image {
   background: center/cover no-repeat url("../images/banner.jpg");
   height: 45rem;
@@ -574,23 +588,42 @@ h4 {
   padding-top: 0.25em;
 }
 
+@media (max-width: 420px) {
+  .header--home .site-logo {
+    font-size: 3.2rem;
+    position: relative;
+    top: 3rem;
+  }
+}
+
 .header--home__img {
   position: absolute;
   left: 50%;
   bottom: 0;
   -webkit-transform: translateY(30%);
           transform: translateY(30%);
-  max-height: 62.5rem;
+  height: 62.5rem;
   width: auto;
 }
 
 @media (max-width: 680px) {
   .header--home__img {
     max-height: 45rem;
-    -webkit-transform: translateY(40%);
-            transform: translateY(40%);
+    -webkit-transform: translateY(25%);
+            transform: translateY(25%);
     left: auto;
     right: 0;
+    height: auto;
+    max-width: 80%;
+    width: auto;
+    top: 24rem;
+    bottom: auto;
+  }
+}
+
+@media (max-width: 420px) {
+  .header--home__img {
+    top: 14rem;
   }
 }
 
