@@ -17,14 +17,20 @@
 
     $breakpoint arguments
 
-    0-600px: sm
-    600-900px: md
-    900-1200px: lg
-    (1200-1800) default styles applied
-    1800px+: xxl
+
+    0-420px: xs
+    420-680px: sm
+    681-900px: md
+    901-1240px: lg
+    (1241-1800) default styles applied
+    1801px+: xxl
 
 */
 @mixin respond($breakpoint) {
+
+    @if $breakpoint == xs {
+        @media (max-width: 420px) { @content };
+    }
 
     @if $breakpoint == sm {
         @media (max-width: 680px) {  @content };
