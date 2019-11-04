@@ -27,11 +27,11 @@ Black
 
     $breakpoint arguments
 
-    0-600px: xs
-    600-900px: sm
-    900-1200px: md
+    0-600px: sm
+    600-900px: md
+    900-1200px: lg
     (1200-1800) default styles applied
-    1800px+: lg
+    1800px+: xxl
 
 */
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
@@ -224,6 +224,24 @@ html {
   font-size: 62.5%;
 }
 
+@media (max-width: 680px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (max-width: 900px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (min-width: 1800px) {
+  html {
+    font-size: 75%;
+  }
+}
+
 body {
   overflow-x: hidden;
 }
@@ -307,6 +325,12 @@ h4 {
 
 .page-title__heading {
   font-size: 6.9rem;
+}
+
+@media (max-width: 1240px) {
+  .page-title__heading {
+    font-size: 5.8rem;
+  }
 }
 
 .info__title {
@@ -481,6 +505,23 @@ h4 {
           transform: translateY(30%);
   max-height: 62.5rem;
   width: auto;
+}
+
+@media (max-width: 680px) {
+  .header--home__img {
+    max-height: 45rem;
+    -webkit-transform: translateY(40%);
+            transform: translateY(40%);
+    left: auto;
+    right: 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .header--home {
+    background: -webkit-gradient(linear, left bottom, left top, from(rgba(15, 15, 15, 0.8)), to(rgba(15, 15, 15, 0.1))), center/cover no-repeat url("../images/home-header.jpg");
+    background: linear-gradient(to top, rgba(15, 15, 15, 0.8), rgba(15, 15, 15, 0.1)), center/cover no-repeat url("../images/home-header.jpg");
+  }
 }
 
 .info {

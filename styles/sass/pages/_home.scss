@@ -28,6 +28,21 @@
         transform: translateY(30%);
         max-height: 62.5rem;
         width: auto;
+
+        @include respond(sm) {
+            max-height: 45rem;
+            transform: translateY(40%);
+            left: auto;
+            right: 0;
+        }
+    }
+
+    @include respond(md) { 
+        background: linear-gradient(
+                    to top, 
+                    rgba($color-black, .8),
+                    rgba($color-black, 0.1)),
+                    center / cover no-repeat url("../images/home-header.jpg");
     }
 }
 

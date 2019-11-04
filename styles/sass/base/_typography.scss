@@ -76,7 +76,11 @@ h4 {
 }
 
 .page-title__heading {
-    font-size: 6.9rem
+    font-size: 6.9rem;
+
+    @include respond(lg) {
+        font-size: 5.8rem;
+    }
 }
 
 .info {
