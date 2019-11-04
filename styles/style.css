@@ -628,6 +628,7 @@ h4 {
           transform: translateY(30%);
   height: 62.5rem;
   width: auto;
+  border-right: 20px solid #FFD300;
 }
 
 @media (max-width: 680px) {
@@ -653,6 +654,12 @@ h4 {
   .header--home {
     background: -webkit-gradient(linear, left bottom, left top, from(rgba(15, 15, 15, 0.8)), to(rgba(15, 15, 15, 0.1))), center/cover no-repeat url("../images/home-header.jpg");
     background: linear-gradient(to top, rgba(15, 15, 15, 0.8), rgba(15, 15, 15, 0.1)), center/cover no-repeat url("../images/home-header.jpg");
+  }
+}
+
+@media (min-width: 1800px) {
+  .header--home {
+    background: center/contain no-repeat url("../images/home-header.jpg"), #171B0E;
   }
 }
 
