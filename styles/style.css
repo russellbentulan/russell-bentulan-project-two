@@ -436,6 +436,29 @@ h4 {
   padding-top: 7.2rem;
 }
 
+.site-nav__checkbox {
+  position: absolute;
+  top: -9999px;
+}
+
+.site-nav__burger {
+  position: absolute;
+  top: 6rem;
+  right: 6rem;
+  z-index: 2000;
+  text-align: center;
+  cursor: pointer;
+  display: none;
+}
+
+@media (max-width: 680px) {
+  .site-nav__burger {
+    display: block;
+    top: 3rem;
+    right: 3rem;
+  }
+}
+
 .site-nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -466,6 +489,66 @@ h4 {
 
 .site-nav__link--current {
   border-bottom: 4px solid #FFD300;
+}
+
+@media (max-width: 680px) {
+  .site-nav {
+    padding-top: 0;
+  }
+  .site-nav__icon::before {
+    display: block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    content: "\f0c9";
+    border-radius: 4px;
+    padding: 1rem;
+    font-size: 5rem;
+    text-shadow: 1.5px 3px 2px rgba(0, 0, 0, 0.6), -3px 4px 4px rgba(0, 0, 0, 0.4);
+  }
+  .site-nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: fixed;
+    left: 999;
+    opacity: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  .site-nav__link {
+    margin-left: 10%;
+    font-size: 4rem;
+    padding: 1.8rem;
+  }
+  .site-nav__checkbox:checked ~ .site-nav__burger {
+    position: fixed;
+  }
+  .site-nav__checkbox:checked ~ .site-nav__burger .site-nav__icon::before {
+    content: "\f00d";
+  }
+  .site-nav__checkbox:checked ~ .site-nav__list {
+    opacity: 1;
+    left: 0;
+    -webkit-transition: .4s all;
+    transition: .4s all;
+    padding-top: 10rem;
+    background-color: #0F0F0F;
+  }
+  .site-nav__checkbox:checked ~ .site-nav__list .site-nav__item, .site-nav__checkbox:checked ~ .site-nav__list .site-nav__item:not(:last-child) {
+    margin-right: 5rem;
+  }
+  .site-nav__checkbox:checked ~ .site-nav__list .site-nav__link {
+    display: block;
+    margin-bottom: 1.8rem;
+  }
 }
 
 .banner-image {

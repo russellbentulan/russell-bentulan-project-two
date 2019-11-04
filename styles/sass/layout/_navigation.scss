@@ -1,7 +1,28 @@
 .site-nav {
-
     background: transparent;
     padding-top: $gutter-vertical;
+
+    &__checkbox {
+        position: absolute;
+        top: -9999px;
+    }
+
+    &__burger {
+        position: absolute;
+        top: 6rem;
+        right: 6rem;
+        z-index: 2000;
+        text-align: center;
+
+        cursor: pointer;
+        display: none;
+
+        @include respond(sm) {
+            display: block;
+            top: 3rem;
+            right: 3rem;
+        }
+    }
 
     &__list {
         display: flex;
@@ -29,6 +50,73 @@
 
         &--current {
             border-bottom: 4px solid $color-accent;
+        }
+    }
+
+    @include respond(sm) {
+        padding-top: 0;
+
+        &__icon::before {
+            display: block;
+            font-style: normal;
+            font-variant: normal;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            font-family: "Font Awesome 5 Pro";
+            font-weight: 900;
+            content: "\f0c9";
+
+            border-radius: 4px;
+            padding: 1rem;
+            font-size: 5rem;
+            text-shadow: 1.5px 3px 2px rgba(0,0,0,.6),
+                         -3px 4px 4px rgba(0,0,0,.4);
+        }
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+            position: fixed;
+            left: 999;
+            opacity: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        &__link {
+            margin-left: 10%;
+            font-size: 4rem;
+            padding: 1.8rem;
+        }
+
+        // Functionality
+        &__checkbox:checked ~ &__burger {
+            position: fixed;
+
+            & .site-nav__icon::before {
+                content: "\f00d";
+            }
+        }
+
+        &__checkbox:checked ~ &__list {
+            opacity: 1;
+            left: 0;
+            transition: .4s all;
+            padding-top: $gutter-vertical-lg;
+            background-color: $color-black;
+
+
+            & .site-nav__item {
+                &,
+                &:not(:last-child) {
+                    margin-right: $grid-gutter;
+                }
+            }
+
+            & .site-nav__link {
+                display: block;
+                margin-bottom: 1.8rem;
+            }
         }
     }
 }
