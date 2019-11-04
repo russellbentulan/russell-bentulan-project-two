@@ -38,16 +38,13 @@
             max-height: 45rem;
             transform: translateY(25%);
             left: auto;
-            right: 0;
-            height: auto;
-            max-width: 80%;
-            width: auto;
-            top: 24rem;
-            bottom: auto;
+            right: -15vw;
+            height: 45rem;
         }
 
         @include respond(xs) {
-            top: 14rem;
+            transform: translateY(15%);
+            height: 30rem;
         }
     }
 
@@ -63,8 +60,23 @@
 // RESTAURANT INFO SECTION
 .info {
     background-color: $color-primary;
-    padding-top: (18rem + $gutter-vertical-sm); // places child elements below header image
     padding-bottom: $gutter-vertical-lg;
+
+    // places child elements below header image
+    &::before {
+        content: "";
+        display: block;
+        height: calc(18rem + #{$gutter-vertical-sm});
+        width: 100%;
+
+        @include respond(sm) {
+            height: 12rem;
+        }
+
+        @include respond(xs) {
+            height: 6rem;
+        }
+    }
 
     &__list {
         @extend %list-reset;
@@ -77,6 +89,14 @@
         &:nth-child(1), 
         &:nth-child(2) {
             margin-bottom: $grid-gutter;    
+
+            @include respond(md) {
+                margin-bottom: 0;
+            }
+        }
+
+        @include respond(md) {
+            margin-top: $grid-gutter;
         }
     }
 
@@ -101,20 +121,22 @@
     background-color: $color-secondary;
     position:relative;
 
-    &::after {
-        content: "";
-        display: block;
-        height: $gutter-vertical-sm;
-        width: 100%;
-        background-color: $color-primary;
-    }
     .menu-item {
         align-items: flex-start;
-        padding-bottom: $gutter-vertical-sm;
-        
+        padding-bottom: 2rem;
         &--reverse {
             @extend .menu-item;
             flex-direction: row-reverse;
+
+            & > *:first-child {
+                margin-right: 0;
+                margin-left: $grid-gutter;
+            }
+
+            &__img-container {
+                position: relative;
+                top: 4.5rem;
+            }
         }
 
         &__img-container {
@@ -148,8 +170,7 @@
         }
 
         &:last-child > * {
-            position: relative;
-            top: 6rem;
+            margin-top: 6rem;
         }
     }
 }
@@ -166,6 +187,10 @@
 
     &__text {
         text-align: left;
+
+        @include respond(md) {
+            text-align: center;
+        }
     }
 
     &__btn {
@@ -176,12 +201,13 @@
 // Nature space section
 .nature {
     background-color: $color-primary;
-    padding: $gutter-vertical-lg;
+    padding: $gutter-vertical-lg 0;
 
     &__img-container {
         flex: 0 1 auto;
         position: relative;
         margin-right: $grid-gutter;
+        margin-bottom: $grid-gutter;
     }
 
     &__img {
@@ -189,8 +215,12 @@
     }
 
     &__content {
-        flex: 1 1;
+        flex: 1 1 40rem;
         @extend %text-container;
+
+        @include respond(md) {
+           flex-basis: 100%;
+        }
     }
 
     &__btn {
@@ -205,5 +235,19 @@
 
     &__list {
         @extend %list-reset;
+    }
+
+    &__item {
+        @include respond(sm) {
+
+            &[class*='col-']:first-child {
+                margin-right: $grid-gutter;
+                margin-bottom: $grid-gutter;
+            }
+
+            &:not(:last-child) {
+                width: calc((100% - #{$grid-gutter}) / 2);
+            }
+        }
     }
 }

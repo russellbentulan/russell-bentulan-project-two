@@ -12,6 +12,10 @@
 [class*="col-"] {
     &:not(:last-child) {
         margin-right: $grid-gutter;
+
+        @include respond(sm) {
+            margin-right: 0;
+        }
     }
 }
 
@@ -21,6 +25,10 @@
     &:nth-child(2) {
         margin-right: 0;
     }
+
+    @include respond(sm) {
+        width: 100%;
+    }
 }
 
 .col-1-of-3 {
@@ -28,5 +36,9 @@
 
     &:nth-child(3) {
         margin-right: 0;
+    }
+
+    @include respond(sm) {
+        width: 100%;
     }
 }

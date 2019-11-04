@@ -1,5 +1,9 @@
 .header {
-    min-height: 62.5rem;
+    height: 62.5rem;
+
+    @include respond(xs) {
+        height: 45rem;
+    }
 }
 
 .page-title__heading {
