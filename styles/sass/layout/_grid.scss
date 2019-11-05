@@ -2,11 +2,34 @@
     max-width: $grid-width;
     width: 90%;
     margin: 0 auto;
+
+    &--sidebar-left  {
+        max-width: calc(#{$grid-width} * .25);
+        margin-left: auto;
+    }
+
+    &--main-right {
+        max-width: calc(#{$grid-width} * .75);
+        margin-right: auto;
+    }
+}
+
+.sidebar--left {
+    flex: 1 0 calc(50% - (#{$grid-width} * .75));
+}
+
+.main--right {
+    flex: 1 1 calc(50% - (#{$grid-width} * .25));
 }
 
 .flex-container {
     display: flex;
     flex-flow:row wrap;
+
+    &--sidebar {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 [class*="col-"] {
