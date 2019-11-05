@@ -5,31 +5,31 @@
 
     &--sidebar-left  {
         max-width: calc(#{$grid-width} * .35);
+        width: 90%;
         margin-left: auto;
     }
 
     &--main-right {
-        max-width: calc(#{$grid-width} * .65);
+        max-width: calc((#{$grid-width} * .65));
+        width: 90%;
         margin-right: auto;
     }
 }
 
 .sidebar--left {
-    flex: 1 0 calc(45% - (#{$grid-width} * .65));
-    margin-left: 5%;
+    flex: 1 1 calc(50% - (#{$grid-width} * .65));
     margin-right: 9rem;
 }
 
 .main--right {
-    flex: 1 1 calc(45% - (#{$grid-width} * .35));
-    margin-right: 5%;
+    flex: 1 1 calc(50% - (#{$grid-width} * .35));
 }
 
 .flex-container {
     display: flex;
     flex-flow:row wrap;
 
-    &--sidebar {
+    &--nowrap {
         display: flex;
         justify-content: center;
     }

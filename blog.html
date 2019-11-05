@@ -27,7 +27,7 @@
                 <ul class="site-nav__list">
 
                     <li class="site-nav__item">
-                        <a href="./index.html" class="site-nav__link site-nav__link--current">Home</a>
+                        <a href="./index.html" class="site-nav__link">Home</a>
                     </li>
 
                     <li class="site-nav__item">
@@ -35,7 +35,7 @@
                     </li>
 
                     <li class="site-nav__item">
-                        <a href="./blog.html" class="site-nav__link">Blog</a>
+                        <a href="./blog.html" class="site-nav__link--current">Blog</a>
                     </li>
 
                     <li class="site-nav__item">
@@ -57,16 +57,16 @@
     </header>
     <!-- .header -->
 
-    <main class="main flex-container--sidebar" id="main">
+    <main class="main flex-container--nowrap" id="main">
 
-        <div class="related-posts sidebar--left flex-container">
+        <div class="sidebar--left flex-container--nowrap">
             
-            <aside class="wrapper--sidebar-left">
+            <aside class="wrapper--sidebar-left related-posts">
 
                 <section class="featured-post">
 
                     <div class="featured-post__img-container">
-                        <img src="./images/blog-side-image.jpg" alt="Fancy salmon dish" class="featured-post_img">
+                        <img src="./images/blog-side-image.jpg" alt="Fancy salmon dish" class="featured-post__img">
                     </div>
 
                     <div class="featured-post__content">
@@ -74,9 +74,10 @@
                         <h2 class="featured-post__title">Featured Restaurants</h2>
 
                         <p class="featured-post__text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. In nulla amet consequatur quos non aspernatur sit laboriosam obcaecati quaerat? Impedit exercitationem, enim nostrum delectus odio saepe ab pariatur ipsa velit.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         </p>
 
+                        <a href="#" class="featured-post__link">Find out more.</a>
                     </div>
 
                 </section>
@@ -122,11 +123,11 @@
 
                 </header>
 
-                <body class="post-single__content">
+                <div class="post-single__content">
 
                     <h1 class="post-single__title">Employment Opportunities</h1>
 
-                    <p>
+                    <p class="post-single__info">
                         <time datetime="2019-10-30">Monday October 30, 2019</time> by Sulaire
                     </p>
 
@@ -150,7 +151,7 @@
 
                     </div>
 
-                </body>
+                </div>
 
             </article>
             <!-- .blog-single -->

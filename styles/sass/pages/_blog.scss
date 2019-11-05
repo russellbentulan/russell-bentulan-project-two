@@ -6,14 +6,37 @@
     background: center / cover no-repeat url("../images/blog-header.jpg");
 }
 
-.post-single {
+.related-posts {
+    background-color: $color-secondary;
+    margin-top: 10rem;
+    padding: 2rem;
+}
+
+.featured-post {
     &__img-container {
-        background-color: $color-accent;
+        position: relative;
     }
 
     &__img {
         position: relative;
-        bottom: 2rem;
-        left: 2rem;
+        bottom: 4rem;
+        right: 20%;
+        width: 120%;
+        height: auto;
     }
+
+    &__link:not(:hover) {
+        text-decoration: none;
+    }
+}
+
+.recent-posts {
+    &__item {
+        margin-left: 1rem;
+        padding-left: 1rem;
+    }
+}
+
+.main--right {
+    margin-top: -10rem;
 }

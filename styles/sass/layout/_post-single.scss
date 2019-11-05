@@ -1,0 +1,20 @@
+.post-single {
+    &__img-container {
+        background-color: $color-accent;
+    }
+
+    &__img {
+        position: relative;
+        bottom: 2rem;
+        left: 2rem;
+    }
+
+    &__content {
+        padding: 6rem 0 6rem 11rem;
+    }
+
+    &__text,
+    &__content {
+        @extend %text-container;
+    }
+}
