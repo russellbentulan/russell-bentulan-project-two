@@ -6,3 +6,14 @@
     background: center / cover no-repeat url("../images/blog-header.jpg");
 }
 
+.post-single {
+    &__img-container {
+        background-color: $color-accent;
+    }
+
+    &__img {
+        position: relative;
+        bottom: 2rem;
+        left: 2rem;
+    }
+}
