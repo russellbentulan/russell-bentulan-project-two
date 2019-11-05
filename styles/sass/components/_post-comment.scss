@@ -1,0 +1,23 @@
+.post-comment {
+    display: flex;
+
+    &__img-container {
+        position: relative;
+        overflow: hidden;
+        flex: 1 1 8rem;
+        height: 80px;
+        margin-right: $grid-gutter;
+    }
+
+    &__img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+
+    &__content {
+        flex: 1 0 calc(100% - 8rem - #{$grid-gutter});
+    }
+}

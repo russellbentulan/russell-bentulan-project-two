@@ -9,12 +9,12 @@
         left: 2rem;
     }
 
-    &__content {
-        padding: 6rem 0 6rem 11rem;
-    }
-
     &__text,
     &__content {
         @extend %text-container;
+    }
+    
+    &__content {
+        padding: 6rem 0;
     }
 }

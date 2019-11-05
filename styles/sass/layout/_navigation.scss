@@ -49,6 +49,7 @@
         }
 
         &--current {
+            @extend .site-nav__link;
             border-bottom: 4px solid $color-accent;
         }
     }

@@ -7,6 +7,7 @@
         max-width: calc(#{$grid-width} * .35);
         width: 90%;
         margin-left: auto;
+        align-self: flex-start;
     }
 
     &--main-right {
