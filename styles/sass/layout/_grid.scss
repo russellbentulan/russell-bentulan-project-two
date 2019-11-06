@@ -11,6 +11,7 @@
 
         @include respond(sm) {
             max-width: 90%;
+            margin: 0 auto;
         }
     }
 
@@ -21,6 +22,7 @@
 
         @include respond(sm) {
             max-width: 90%;
+            margin: 0 auto;
         }
     }
 }
@@ -28,6 +30,7 @@
 .sidebar--left {
     flex: 1 1 calc(50% - (#{$grid-width} * .65));
     margin-right: 9rem;
+    margin-top: 10rem;
 
     @include respond(md) {
         margin-right: 0;

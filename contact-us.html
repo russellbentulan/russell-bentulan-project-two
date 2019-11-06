@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Get In Touch</title>
+    
+    <script src="https://kit.fontawesome.com/ff995803cc.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Barlow|Josefin+Sans:400,600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body class="body--contact">
+    <a href="#main" class="visually-hidden skip-link">Skip to main content.</a>
+    
+    <header class="header header--contact">
+
+        <div class="wrapper">
+            
+            <nav class="site-nav">
+                <input type="checkbox" class="site-nav__checkbox" id="nav-toggle">
+
+                <label for="nav-toggle" class="site-nav__burger">
+                    <span class="site-nav__icon"></span>
+                </label>
+
+                <ul class="site-nav__list">
+
+                    <li class="site-nav__item">
+                        <a href="./index.html" class="site-nav__link">Home</a>
+                    </li>
+
+                    <li class="site-nav__item">
+                        <a href="./about.html" class="site-nav__link">About</a>
+                    </li>
+
+                    <li class="site-nav__item">
+                        <a href="./blog.html" class="site-nav__link">Blog</a>
+                    </li>
+
+                    <li class="site-nav__item">
+                        <a href="./contact-us.html" class="site-nav__link--current">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- .site-nav -->
+
+            <div class="page-title">
+
+                <h1 class="page-title__heading site-logo">Get In Touch</h1>
+
+            </div>
+            <!-- .page-title -->
+
+        </div>
+        <!-- .wrapper -->
+    </header>
+    <!-- .header --> 
+
+    <main class="main main--contact flex-container--nowrap" id="main">
+
+        <div class="sidebar--left flex-container--nowrap">
+
+            <section class="wrapper--sidebar-left contact-info">
+
+                <nav class="social-links">
+
+                    <ul class="social-links__list">
+
+                        <li class="social-links__item">
+                            <a href="http://facebook.com" class="social-links__link">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                        </li>
+
+                        <li class="social-links__item">
+                            <a href="http://instagram.com" class="social-links__link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </li>
+
+                        <li class="social-links__item">
+                            <a href="http://twitter.com" class="social-links__link">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+
+                        <li class="social-links__item">
+                            <a href="http://whatsapp.com" class="social-links__link">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- .social-links -->
+
+                <section class="address-info">
+
+                    <address class="address-info__block">
+
+                        <a href="mailto:info@email.com" class="address-info__link">info@email.com</a href="mailto:info@email.com">
+                    
+                    </address>
+
+                    <address class="address-info__block">
+
+                        <p>123 - 456 - 6789</p>
+
+                        <p>
+                            123 Queen Street West, Unit 10<br/>
+                            Toronto, Ontario<br/>
+                            M5V2D5
+                        </p>
+
+                    </address>
+
+                </section>
+                <!-- .address-info -->
+            </section>
+            <!-- .contact-info -->
+        </div>
+        <!-- .sidebar-left -->
+
+
+        <section class="main--right contact-form">
+
+            <form action="submit" class=" wrapper--main-right contact-form__form flex-container">
+
+                <div class="col-1-of-2 contact-form__input-container">
+
+                    <input type="text" id="name" class="contact-form__input-text">
+
+                    <label for="name" class="contact-form__label">
+                        Name
+                    </label>
+
+                </div>
+                
+                <div class="col-1-of-2 contact-form__input-container">
+
+                    <input type="email" id="email" class="contact-form__input-text">
+
+                    <label for="email" class="contact-form__label">
+                        Email
+                    </label>
+
+                </div>
+
+                <div class="row contact-form__input-container">
+
+                    <textarea id="message" cols="30" rows="10" class="contact-form__textarea"></textarea>
+
+                    <label for="message" class="contact-form__label">
+                        Message
+                    </label>
+
+                </div>
+
+                <input type="submit" value="Submit" class="contact-form__submit">
+
+            </form>
+
+        </section>
+        <!-- .contact-form -->
+    </main>
+    <!-- .main -->
+
+    <footer class="footer">
+        <p class="footer__text">Copyright &copy; 2019 Juno College</p>
+    </footer>
+</body>
+</html>

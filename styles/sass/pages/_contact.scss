@@ -1,0 +1,58 @@
+.body--contact {
+    background-color: $color-primary;
+}
+
+.header--contact {
+    background: center / cover no-repeat url("../images/contact-header.jpg");
+}
+
+.main--contact {
+    padding-bottom: $gutter-vertical-lg;
+}
+
+.social-links {
+    margin-bottom: $grid-gutter;
+
+    &__list {
+        @extend %list-reset;
+        display: flex;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: $grid-gutter;
+        }
+    }
+
+    &__link {
+        color: $color-accent;
+        font-size: 3rem;
+    }
+}
+
+.address-info {
+    & > *:not(:last-child) {
+        margin-bottom: $grid-gutter;
+    }
+
+    &__link:not(:hover) {
+        text-decoration: none;
+    }
+}
+
+.contact-form {
+    &__form {
+        background-color: $color-secondary;
+        padding: 5.5rem;
+
+        position: relative;
+        bottom: 1.5rem;
+        right: 1.5rem;
+        box-shadow: 1.5rem 1.5rem 0 $color-accent;
+    }
+
+    &__input-text:focus,
+    &__textarea:focus {
+        background-color: $color-primary;
+    }
+}
