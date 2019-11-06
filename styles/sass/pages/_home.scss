@@ -7,7 +7,9 @@
         &__line,
         &__block {
             display: block;
-            @include josefin-baseline-fix;
+            &:not(:first-child) {
+                @include josefin-baseline-fix;
+            }
         }
 
         &__block {

@@ -9,7 +9,7 @@
         margin-left: auto;
         align-self: flex-start;
 
-        @include respond(sm) {
+        @include respond(md) {
             max-width: 90%;
             margin: 0 auto;
         }
@@ -20,7 +20,7 @@
         width: 90%;
         margin-right: auto;
 
-        @include respond(sm) {
+        @include respond(md) {
             max-width: 90%;
             margin: 0 auto;
         }
@@ -35,9 +35,6 @@
     @include respond(md) {
         margin-right: 0;
         flex-basis: 100%;
-    }
-
-    @include respond(sm) {
         order: 1;
     }
 }
@@ -58,7 +55,7 @@
         display: flex;
         justify-content: center;
 
-        @include respond(sm) {
+        @include respond(md) {
             flex-wrap: wrap;
         }
     }
@@ -85,7 +82,7 @@
         margin-right: 0;
     }
 
-    @include respond(sm) {
+    @include respond(md) {
         width: 100%;
     }
 }

@@ -10,26 +10,6 @@
     padding-bottom: $gutter-vertical-lg;
 }
 
-.social-links {
-    margin-bottom: $grid-gutter;
-
-    &__list {
-        @extend %list-reset;
-        display: flex;
-    }
-
-    &__item {
-        &:not(:last-child) {
-            margin-right: $grid-gutter;
-        }
-    }
-
-    &__link {
-        color: $color-accent;
-        font-size: 3rem;
-    }
-}
-
 .address-info {
     & > *:not(:last-child) {
         margin-bottom: $grid-gutter;

@@ -1,7 +1,8 @@
 @import 'abstracts/variables',
         'abstracts/placeholders',
         'abstracts/mixins',
-        'abstracts/utilities';
+        'abstracts/utilities',
+        'abstracts/animations';
 
 @import 'base/setup',
         'base/base',
@@ -10,7 +11,8 @@
 @import 'components/buttons',
         'components/skip-link',
         'components/post-comment',
-        'components/forms';
+        'components/forms',
+        'components/social-links';
 
 @import 'layout/grid',
         'layout/header',

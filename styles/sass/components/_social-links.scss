@@ -1,0 +1,31 @@
+.social-links {
+    margin-bottom: $grid-gutter;
+
+    &__list {
+        @extend %list-reset;
+        display: flex;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-right: $grid-gutter;
+        }
+    }
+
+    &__link {
+        color: $color-accent;
+        font-size: 3rem;
+        display: inline-block;
+        position: relative;
+
+        &:hover {
+            animation: shake 1s infinite;
+            bottom: 2px;
+            transition: .2s transform;
+
+            & > * {
+                transform: scale(1.25);
+            }
+        }
+    }
+}

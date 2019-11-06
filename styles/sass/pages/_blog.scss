@@ -44,4 +44,9 @@
 .post-comments,
 .new-comment {
     padding-left: 11rem;
+
+    @include respond(md) {
+        padding-left: 0;
+        margin: 10rem auto;
+    }
 }
