@@ -1,0 +1,10 @@
+.skip-link:focus {
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #FFF;
+    color: $color-primary;
+    border: 2px solid $color-primary;
+    padding: 1rem 2rem;
+}

@@ -468,6 +468,18 @@ h4 {
   border: 2px solid #FFF;
 }
 
+.skip-link:focus {
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #FFF;
+  color: #2B331B;
+  border: 2px solid #2B331B;
+  padding: 1rem 2rem;
+}
+
 .post-comment {
   display: -webkit-box;
   display: -ms-flexbox;
