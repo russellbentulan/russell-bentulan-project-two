@@ -5,12 +5,9 @@
     text-transform: uppercase;
     background-color: $color-accent;
     color: $color-secondary;
+    border: 2px solid transparent;
 
     @include josefin-baseline-fix(.5rem, .25rem);
-
-    &:hover {
-        background-color: $color-accent-light;
-    }
 
     &--dark {
         @extend %btn;
@@ -20,6 +17,19 @@
 
         &:hover {
             background-color: $color-secondary-light;
+            color: $color-secondary;
         }
+
+        &:focus {
+            border: 2px solid $color-primary;
+        }
+    }
+    
+    &:hover {
+        background-color: $color-accent-light;
+    }
+
+    &:focus {
+        border: 2px solid $color-text;
     }
 }

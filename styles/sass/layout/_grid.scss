@@ -8,22 +8,43 @@
         width: 90%;
         margin-left: auto;
         align-self: flex-start;
+
+        @include respond(sm) {
+            max-width: 90%;
+        }
     }
 
     &--main-right {
         max-width: calc((#{$grid-width} * .65));
         width: 90%;
         margin-right: auto;
+
+        @include respond(sm) {
+            max-width: 90%;
+        }
     }
 }
 
 .sidebar--left {
     flex: 1 1 calc(50% - (#{$grid-width} * .65));
     margin-right: 9rem;
+
+    @include respond(md) {
+        margin-right: 0;
+        flex-basis: 100%;
+    }
+
+    @include respond(sm) {
+        order: 1;
+    }
 }
 
 .main--right {
     flex: 1 1 calc(50% - (#{$grid-width} * .35));
+
+    @include respond(md) {
+        flex-basis: 100%;
+    }
 }
 
 .flex-container {
@@ -33,7 +54,15 @@
     &--nowrap {
         display: flex;
         justify-content: center;
+
+        @include respond(sm) {
+            flex-wrap: wrap;
+        }
     }
+}
+
+.row {
+    width: 100%;
 }
 
 [class*="col-"] {

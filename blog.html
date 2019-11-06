@@ -181,7 +181,7 @@
                         <div class="post-comment__text">
 
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit voluptate porro vitae. At, nemo sint voluptatum aperiam sequi ex eveniet totam iusto, corporis a quisquam repudiandae nobis maiores ratione impedit delectus ab tempora quo...
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit voluptate porro vitae. At, nemo sint voluptatum aperiam sequi ex eveniet totam iusto...
                             </p>
 
                         </div>
@@ -208,7 +208,7 @@
                         <div class="post-comment__text">
 
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit voluptate porro vitae. At, nemo sint voluptatum aperiam sequi ex eveniet totam iusto, corporis a quisquam repudiandae nobis maiores ratione impedit delectus ab tempora quo...
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit voluptate porro vitae. At, nemo sint voluptatum aperiam sequi ex eveniet totam iusto...
                             </p>
 
                         </div>
@@ -219,9 +219,49 @@
                 <!-- .post-comment -->
             </section>
             <!-- .post-comments -->
+
+            <section class="wrapper--main-right new-comment">
+
+                <form action="submit" class="new-comment__form flex-container">
+
+                    <div class="col-1-of-2 new-comment__input-container">
+                        <input type="text" id="name" class="new-comment__input-text">
+                       
+                        <label for="name" class="new-comment__label">
+                            Name
+                        </label>
+                    </div>
+
+                    <div class="col-1-of-2 new-comment__input-container">
+                        <input type="email" id="email" class="new-comment__input-text">
+                        
+                        <label for="email" class="new-comment__label">
+                            Email
+                        </label>
+                    </div>
+
+                    <div class="row new-comment__input-container">
+                        <textarea id="comment" cols="30" rows="10" class="new-comment__textarea"></textarea>
+
+                        <label for="comment" class="new-comment__label">
+                            Comment
+                        </label>
+                    </div>
+
+                    <input type="submit" value="Post Comment" class="new-comment__submit">
+
+                </form>
+
+            </section>
+            <!-- .new-comment -->
+
         </div>
         <!-- .main--right -->
     </main>
     <!-- .main -->
+    
+    <footer class="footer">
+        <p class="footer__text">Copyright &copy; 2019 Juno College</p>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,71 @@
+.new-comment {  
+    &__form {
+        padding: $grid-gutter 0;
+    }
+
+    &__input-container {
+        position: relative;
+    }
+
+    &__label {
+        position: absolute;
+        top: 2rem;
+        left: 1rem;
+        display: block;
+
+        &--textarea {
+            display: block;
+        }
+
+        &:hover {
+            cursor: text;
+        }
+    } 
+
+    &__input {
+        display: block;
+        width: calc((100% - #{$grid-gutter}) / 2);
+
+        &:not(:last-child) {
+            margin-right: $grid-gutter;
+        }
+
+        &--lrg {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    &__input-text,
+    &__textarea {
+        width: 100%;
+        padding: 2rem 1rem;
+        margin-bottom: $grid-gutter;
+        background-color: transparent;
+        color: $color-text;
+        border: 2px solid transparent;
+        border-bottom: 2px solid $color-accent;
+
+        &:hover {
+            border: 2px solid rgba($color-accent, .5);
+        }
+
+        &:focus {
+            background-color: $color-secondary;
+            border: 2px solid $color-text;
+            & ~ .new-comment__label {
+                top: -3rem;
+                transition: .2s top;
+            }
+        }
+    }
+
+    &__textarea {
+        border: 2px solid $color-accent;
+    }
+
+    &__submit {
+        @extend %btn;
+        width: 100%;
+    }
+}
